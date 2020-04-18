@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+<<<<<<< HEAD
     actionpack (6.0.2.2)
       actionview (= 6.0.2.2)
       activesupport (= 6.0.2.2)
@@ -10,11 +11,26 @@ GEM
       rails-html-sanitizer (~> 1.0, >= 1.2.0)
     actionview (6.0.2.2)
       activesupport (= 6.0.2.2)
+=======
+    actionpack (6.0.2)
+      actionview (= 6.0.2)
+      activesupport (= 6.0.2)
+      rack (~> 2.0)
+      rack-test (>= 0.6.3)
+      rails-dom-testing (~> 2.0)
+      rails-html-sanitizer (~> 1.0, >= 1.2.0)
+    actionview (6.0.2)
+      activesupport (= 6.0.2)
+>>>>>>> 6117510b527c4d3a8b11c24b206a1212376d4596
       builder (~> 3.1)
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
+<<<<<<< HEAD
     activesupport (6.0.2.2)
+=======
+    activesupport (6.0.2)
+>>>>>>> 6117510b527c4d3a8b11c24b206a1212376d4596
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
@@ -28,9 +44,12 @@ GEM
     ffi (1.12.2)
     i18n (1.8.2)
       concurrent-ruby (~> 1.0)
+<<<<<<< HEAD
     io-console (0.5.6)
     irb (1.2.3)
       reline (>= 0.0.1)
+=======
+>>>>>>> 6117510b527c4d3a8b11c24b206a1212376d4596
     kafka (0.5.2)
       ffi
       mini_portile2
@@ -39,10 +58,17 @@ GEM
       nokogiri (>= 1.5.9)
     mini_portile2 (2.4.0)
     minitest (5.14.0)
+<<<<<<< HEAD
     nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
     rack (2.2.2)
     rack-protection (2.0.8.1)
+=======
+    nokogiri (1.10.8)
+      mini_portile2 (~> 2.4.0)
+    rack (2.0.7)
+    rack-protection (2.0.5)
+>>>>>>> 6117510b527c4d3a8b11c24b206a1212376d4596
       rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -51,10 +77,17 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.3.0)
       loofah (~> 2.3)
+<<<<<<< HEAD
     redis (4.1.3)
     redis-actionpack (5.2.0)
       actionpack (>= 5, < 7)
       redis-rack (>= 2.1.0, < 3)
+=======
+    redis (4.1.2)
+    redis-actionpack (5.1.0)
+      actionpack (>= 4.0, < 7)
+      redis-rack (>= 1, < 3)
+>>>>>>> 6117510b527c4d3a8b11c24b206a1212376d4596
       redis-store (>= 1.1.0, < 2)
     redis-activesupport (5.2.0)
       activesupport (>= 3, < 7)
@@ -62,6 +95,7 @@ GEM
     redis-namespace (1.7.0)
       redis (>= 3.0.4)
     redis-queue (0.1.0)
+<<<<<<< HEAD
       redis (>= 3.3.5, < 5)
     redis-rack (2.1.2)
       rack (>= 2.0.8, < 3)
@@ -83,18 +117,49 @@ GEM
     tzinfo (1.2.6)
       thread_safe (~> 0.1)
     zeitwerk (2.3.0)
+=======
+      redis (>= 3.3.5, < 5)
+    redis-rack (2.0.6)
+      rack (>= 1.5, < 3)
+      redis-store (>= 1.2, < 2)
+    redis-rails (5.0.2)
+      redis-actionpack (>= 5.0, < 6)
+      redis-activesupport (>= 5.0, < 6)
+      redis-store (>= 1.2, < 2)
+    redis-store (1.8.1)
+      redis (>= 4, < 5)
+    sidekiq (5.2.7)
+      connection_pool (~> 2.2, >= 2.2.2)
+      rack (>= 1.5.0)
+      rack-protection (>= 1.5.0)
+      redis (>= 3.3.5, < 5)
+    thread_safe (0.3.6)
+    tzinfo (1.2.6)
+      thread_safe (~> 0.1)
+    zeitwerk (2.2.2)
+>>>>>>> 6117510b527c4d3a8b11c24b206a1212376d4596
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+<<<<<<< HEAD
   irb
+=======
+>>>>>>> 6117510b527c4d3a8b11c24b206a1212376d4596
   kafka
   redis
   redis-namespace
   redis-queue
   redis-rails
+<<<<<<< HEAD
   sidekiq
 
 BUNDLED WITH
    1.17.3
+=======
+  sidekiq (~> 5.2.7)
+
+BUNDLED WITH
+   2.1.4
+>>>>>>> 6117510b527c4d3a8b11c24b206a1212376d4596
