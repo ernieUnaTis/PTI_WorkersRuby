@@ -20,8 +20,14 @@ class SmsWorker
 	include Sidekiq::Worker
 
 	def perform()
-		response = Net::HTTP.get_response('localhost', '/productores?shortcode=3000&id=123456&msisdn=54123456789&carrier=ar.movistar&tipo=sms_mt&cobro=SC',3000)
-		puts response.code
+    $i = 1
+    while $i > 0  do
+		    response = Net::HTTP.get_response('127.0.0.1', '/productores?shortcode=3000&id=123456&msisdn=54123456789&carrier=ar.movistar&tipo=sms_mt&cobro=SC',3000)
+        #if(response.code==200)
+          puts "Encolamiento correcto " + response.code + "__" + response.message
+        #end
+        sleep 5
+    end
 	end
 
 
