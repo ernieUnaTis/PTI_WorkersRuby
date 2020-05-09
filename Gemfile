@@ -10,5 +10,3 @@ gem 'redis'
 gem 'redis-rails'
 gem 'redis-queue'
 gem 'redis-namespace'
-
-gem 'kafka'
